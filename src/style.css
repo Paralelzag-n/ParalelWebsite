@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#23ED98];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#23ED98]/20 rounded-lg cursor-pointer;
+  &:hover {
+    @apply bg-[#23ED98]/50;
+  }
+}
+
+
+
+* {
+  margin: 0;
+  font-family: 'Montserrat';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body{
+  height: 100vh;
+}
